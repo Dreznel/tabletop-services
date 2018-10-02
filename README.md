@@ -1,4 +1,4 @@
-# Tabletop-Tools
+# Tabletop Services
 A collection of services for the Tabletop Tools web application. Mostly created so I can brush up my Java skills and practice using SpringBoot.
 
 
