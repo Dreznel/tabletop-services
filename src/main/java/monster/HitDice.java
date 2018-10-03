@@ -1,7 +1,7 @@
 package monster;
 
-import java.util.Random;
-
+import dice.Dice;
+import dice.FairDice;
 
 public class HitDice {
 
@@ -13,13 +13,16 @@ public class HitDice {
         this.dieSize = dieSize;
     }
 
-    public int rollHp() {
+    public int rollHp(Dice die) {
         int hp = 0;
-        Random random = new Random();
         for(int i=0; i<this.dieAmount; i++) {
-            hp += random.nextInt(this.dieSize) + 1;
+            hp += die.roll();
         }
         return hp;
+    }
+
+    public int rollHp() {
+        return this.rollHp(new FairDice(this.dieSize));
     }
 
     public String toString() {
