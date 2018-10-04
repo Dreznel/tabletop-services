@@ -28,4 +28,20 @@ public class HitDice {
     public String toString() {
         return String.format("%dd%d", this.dieAmount, this.dieSize);
     }
+
+    public int getDieAmount() {
+        return dieAmount;
+    }
+
+    public void setDieAmount(int dieAmount) {
+        this.dieAmount = dieAmount;
+    }
+
+    public int getDieSize() {
+        return dieSize;
+    }
+
+    public void setDieSize(int dieSize) {
+        this.dieSize = dieSize;
+    }
 }

@@ -2,12 +2,16 @@ package monster;
 
 //Basic monster implementation.
 public class Monster {
+
+
+    private int monsterId;
     private int averageHitPoints;
     private HitDice hitDice;
     private int challengeRating;
     private String name;
 
     public Monster() {
+        this.monsterId = 3;
         this.averageHitPoints = 195;
         this.hitDice = new HitDice(17, 12);
         this.challengeRating = 14;
@@ -45,4 +49,8 @@ public class Monster {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getMonsterId() { return monsterId; }
+
+    public void setMonsterId(int monsterId) { this.monsterId = monsterId; }
 }
